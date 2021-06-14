@@ -1,28 +1,14 @@
-name: "Hello Actions"
-
+author: octocat@github.com
+branding: 
+  color: purple
+  icon: mic
 description: "Greet someone"
-	
-author: "octocat@github.com"
-	
-		
-inputs:	
-
-	  MY_NAME:
-	
-	    description: "Who to greet"
-
-      required: true
-	    
-      default: "World"
-	
-runs:
-	
-	  using: "docker"
-	
-	  image: "Dockerfile"
-	
-branding:
-
- 	  icon: "mic"
-	
-    color: "purple"
+inputs: 
+  MY_NAME: 
+    default: World
+    description: "Who to greet"
+    required: true
+name: "Hello Actions"
+runs: 
+  image: Dockerfile
+  using: docker
