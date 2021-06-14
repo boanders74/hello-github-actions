@@ -1,0 +1,14 @@
+author: octocat@github.com
+branding: 
+  color: purple
+  icon: mic
+description: "Greet someone"
+inputs: 
+  MY_NAME: 
+    default: World
+    description: "Who to greet"
+    required: true
+name: "Hello Actions"
+runs: 
+  image: Dockerfile
+  using: docker
